@@ -56,7 +56,7 @@
         </div>
         <div class="message-box">
             <textarea type="text" class="message-input" placeholder="Type message..."></textarea>
-            <button type="submit" class="message-submit sound-on-click">Send</button>
+           <button onclick="play();" type="submit" class="message-submit sound-on-click">Send</button>
         </div>
 
     </div>
@@ -73,6 +73,12 @@
     <script src="js/sound.js"></script>
     <!-- partial -->
     <script src="./script.js"></script>
+    <script>
+        function play() {
+            var audio = new Audio("drop.mp3");
+            audio.play();
+        }
+    </script>
 
 </body>
 
